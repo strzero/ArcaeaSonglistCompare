@@ -3,7 +3,7 @@ import json
 
 result = []
 oldTable, newTable = {}, {}
-oldFile, newFile = input(['请输入旧版本Songlist文件名']), input(['请输入新版本Songlist文件名'])
+oldFile, newFile = input(['请输入旧版本Songlist文件名 Input file name of old Songlist']), input(['请输入新版本Songlist文件名 Input file name of new Songlist'])
 with open(oldFile, encoding='utf-8') as file_obj:
     old = json.loads(file_obj.read())
 with open(newFile, encoding='utf-8') as file_obj:
